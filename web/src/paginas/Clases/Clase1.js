@@ -8,15 +8,16 @@ La función scanf() se utiliza principalmente para pedir información al usuario
 Por ejemplo:
 #include <stdio.h>
 int main(){
-char nombre[12];  
-printf("Introduce tu nombre: ");
-scanf("%s",nombre);  
-printf("Hola, %s :)\n", nombre);
-   	return 0; }
+  char nombre[12];  
+  printf("Introduce tu nombre: ");
+  scanf("%s",nombre);  
+  printf("Hola, %s :)\\n", nombre);
+  return 0; 
+}
 Donde la pedimos la información al usuario, especificando el tipo de variable que entrara y su nombre
 Scanf(“%s(tipo de variable)”, nombre de la variable);
 
-Signos (< != || && \\ , %)
+Signos (< != || && \\\\ , %)
 
 Para asignar un valor se utiliza =, para preguntar si un numero es igual a otro se utiliza ==, y para negar se utiliza !.
    Ejemplo de la negación:

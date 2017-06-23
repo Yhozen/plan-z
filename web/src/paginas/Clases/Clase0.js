@@ -39,7 +39,7 @@ const clase0 = {
   La función main es el punto de entrada de cualquier programa en c, es donde se inicia la ejecución del programa.
   Cada programa en c tiene una función main ()
   La función principal se trata igual que todas las funciones, es decir, tiene un tipo de retorno y parámetros de entrada(void). La única diferencia es que la función principal es “llamada” por el sistema cuando el usuario ejecuta el programa.
-  Por lo tanto, la función principal es siempre el primer código ejecutado cuando se inicia el programa
+  Por lo tanto, la función principal es siempre el primer código ejecutado cuando se inicia el programa, recuerda siempre terminar con return 0;
   El main debe estar entre corchetes, y además siempre será int main(void),
   Ejemplo:
   #include<stdio.h>

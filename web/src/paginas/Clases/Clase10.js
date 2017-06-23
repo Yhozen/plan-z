@@ -25,12 +25,13 @@ por ejemplo:
 #include<stdio.h>
 int main()
 {
- FILE *archivo;
- char buffer[100];
- archivo = fopen("ejemplo.txt", "r");
- fgets(buffer, 12, archivo);
-printf("%s",buffer);
-fclose (archivo);
+  FILE *archivo;
+  char buffer[100];
+  archivo = fopen("ejemplo.txt", "r");
+  fgets(buffer, 12, archivo);
+  printf("%s",buffer);
+  fclose (archivo);
+  return 0;
 }
 La función fscanf es casi lo mismo que scanf excepto que el primer argumento es el puntero del archivo.
 fscanf(*file, format, *char)
@@ -45,27 +46,29 @@ int main()
 
  printf("%s",buffer);
  fclose (archivo);
+ return 0;
 }
 Tambien tenemos la función feof que devuelve cero(Falso) si NO es encontrado el final del archivo, esta la podemos ocupar para poder leer el archivo completo como muestra el siguiente ejemplo:
 #include<stdio.h>
 int main()
 {
- FILE *archivo;
- char buffer[100];
- archivo = fopen("ejemplo.txt", "r" );
- if (archivo!=NULL)
- {
- while (!feof(archivo))
-{
- fscanf(archivo, "%s",buffer);
- printf("%s",buffer);
- }
-fclose (archivo);
-}
-else
-{
-printf("Error: Archivo no pudo ser abierto");
-}
+  FILE *archivo;
+  char buffer[100];
+  archivo = fopen("ejemplo.txt", "r" );
+  if (archivo!=NULL)
+  {
+    while (!feof(archivo))
+    {
+      fscanf(archivo, "%s",buffer);
+      printf("%s",buffer);
+    }
+    fclose (archivo);
+  }
+  else
+  {
+    printf("Error: Archivo no pudo ser abierto");
+  }
+  return 0;
 }
 Escritura de Archivos:
 Para la escritura de archivos ocupamos la función fprintf que es casi lo mismo que printf excepto que el primer argumento es el puntero de archivo.
@@ -80,6 +83,7 @@ int main()
  fprintf(archivo,"%s", buffer);
 
  fclose (archivo);
+ return 0;
 }`
 }
 export default clase10;

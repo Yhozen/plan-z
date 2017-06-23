@@ -39,6 +39,7 @@ int main()
        scanf("%s", cliente[i].nombre);  
 
     }
+    return 0;
 }
 Además también se pueden agregar estructuras dentro de otras estructuras, como muestra el siguiente ejemplo:
 #include <stdio.h>
@@ -56,10 +57,11 @@ struct familia{
 };
 int main()
 {
-	struct familia fm1;
+  struct familia fm1;
 
-   	printf("Ingrese nombre hijo 1: ");
-       scanf("%s", fm1.hijo[0].nombre);  
+  printf("Ingrese nombre hijo 1: ");
+  scanf("%s", fm1.hijo[0].nombre);
+  return 0; 
 }
 
 Ejercicio

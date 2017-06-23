@@ -27,9 +27,10 @@ int main(void)
   int a=1;
   int b=3;
 
-  printf("Valor de a: %i. Valor de b: %i\n", a,b);
+  printf("Valor de a: %i. Valor de b: %i\\n", a,b);
   intercambio(&a,&b);
-  printf("Valor de a: %i. Valor de b: %i\n", a,b);
+  printf("Valor de a: %i. Valor de b: %i\\n", a,b);
+  return 0;
 }
 void intercambio(int *a,int *b)
 {
@@ -38,7 +39,7 @@ void intercambio(int *a,int *b)
   aux=*b;
   *b =*a;
   *a =aux;
-  printf("Dentro de función, a: %i, b:%i\n", *a,*b);
+  printf("Dentro de función, a: %i, b:%i\\n", *a,*b);
 }
 
 Si a una función se le entregan las direcciones de memoria de las variables (en vez de sus valores), la función puede acceder directamente al original (el contenido de la variable).
